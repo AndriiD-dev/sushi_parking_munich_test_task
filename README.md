@@ -101,7 +101,7 @@ docker compose up --build
 
 The Chat UI will be available at `http://localhost:8000`.
 
-**Please allow browser geolocation for proper functionality; otherwise, a default location will be used.**
+**Please allow browser geolocation for proper functionality, otherwise, a default location will be used.**
 
 ## Configuration
 
