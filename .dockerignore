@@ -1,0 +1,55 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+.eggs/
+
+# ── Node / Frontend ──
+frontend/node_modules/
+frontend/.vite/
+
+# ── Environment and secrets ──
+.env
+.env.*
+!.env.example
+
+# ── Version control ──
+.git/
+.gitignore
+
+# ── Tests (not needed in Docker image) ──
+tests/
+pytest.ini
+conftest.py
+
+# ── IDE / OS ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Documentation ──
+docs/
+*.md
+!README.md
+!pyproject.toml
+
+# ── uv cache ──
+.python-version
+
+# ── Docker ──
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# ── Agents / AI ──
+.gemini/
+.agents/
+.agent/

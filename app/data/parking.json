@@ -1,0 +1,46 @@
+[
+  {
+    "id": "park-001",
+    "name": "Parkhaus Marienplatz",
+    "address": "Rindermarkt 16, 80331 München",
+    "lat": 48.1362,
+    "lon": 11.5754,
+    "price_per_hour": 3.50,
+    "payment_methods": ["cash", "card", "contactless", "app"],
+    "total_spaces": 400,
+    "opening_hours": "24/7"
+  },
+  {
+    "id": "park-002",
+    "name": "Parkgarage am Stachus",
+    "address": "Herzog-Wilhelm-Str. 1, 80331 München",
+    "lat": 48.1395,
+    "lon": 11.5660,
+    "price_per_hour": 2.80,
+    "payment_methods": ["cash", "card"],
+    "total_spaces": 550,
+    "opening_hours": "Mon-Sun 06:00-24:00"
+  },
+  {
+    "id": "park-003",
+    "name": "Tiefgarage Viktualienmarkt",
+    "address": "Blumenstr. 4, 80331 München",
+    "lat": 48.1340,
+    "lon": 11.5770,
+    "price_per_hour": 4.00,
+    "payment_methods": ["card", "contactless", "app"],
+    "total_spaces": 280,
+    "opening_hours": "Mon-Sat 07:00-23:00"
+  },
+  {
+    "id": "park-004",
+    "name": "Contipark Am Oberanger",
+    "address": "Oberanger 35, 80331 München",
+    "lat": 48.1337,
+    "lon": 11.5700,
+    "price_per_hour": 2.50,
+    "payment_methods": ["cash", "card", "contactless"],
+    "total_spaces": 320,
+    "opening_hours": "24/7"
+  }
+]

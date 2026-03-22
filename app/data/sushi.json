@@ -1,0 +1,57 @@
+[
+  {
+    "id": "sushi-001",
+    "name": "Sushi Marienplatz",
+    "address": "Marienplatz 8, 80331 München",
+    "lat": 48.1372,
+    "lon": 11.5761,
+    "rating": 4.5,
+    "price_range": "€€",
+    "payment_methods": ["cash", "card", "contactless"],
+    "opening_hours": "Mon-Sat 11:30-22:00, Sun 12:00-21:00"
+  },
+  {
+    "id": "sushi-002",
+    "name": "Sakura Garden",
+    "address": "Sendlinger Str. 14, 80331 München",
+    "lat": 48.1355,
+    "lon": 11.5710,
+    "rating": 4.2,
+    "price_range": "€€€",
+    "payment_methods": ["card", "contactless"],
+    "opening_hours": "Mon-Sun 12:00-23:00"
+  },
+  {
+    "id": "sushi-003",
+    "name": "Tokyo Kitchen",
+    "address": "Tal 12, 80331 München",
+    "lat": 48.1363,
+    "lon": 11.5790,
+    "rating": 3.9,
+    "price_range": "€",
+    "payment_methods": ["cash", "card"],
+    "opening_hours": "Tue-Sun 11:00-21:30"
+  },
+  {
+    "id": "sushi-004",
+    "name": "Maki & Friends",
+    "address": "Viktualienmarkt 3, 80331 München",
+    "lat": 48.1350,
+    "lon": 11.5768,
+    "rating": 4.7,
+    "price_range": "€€",
+    "payment_methods": ["cash", "card", "contactless"],
+    "opening_hours": "Mon-Sat 10:00-20:00"
+  },
+  {
+    "id": "sushi-005",
+    "name": "Wasabi Express",
+    "address": "Kaufingerstr. 25, 80331 München",
+    "lat": 48.1380,
+    "lon": 11.5720,
+    "rating": 3.5,
+    "price_range": "€",
+    "payment_methods": ["cash"],
+    "opening_hours": "Mon-Fri 11:00-19:00"
+  }
+]

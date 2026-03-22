@@ -1,0 +1,56 @@
+---
+config:
+  theme: base
+  layout: dagre
+---
+flowchart LR
+
+  A["Frontend<br/>Chat UI + Maps Links"]
+  B["FastAPI<br/>/chat + session + health"]
+  C["Conversation Orchestrator"]
+  D["LLM Client"]
+  E["Session Store"]
+  F["Tool Registry"]
+  G["Tool Dispatcher"]
+  H["Response Validation"]
+
+  subgraph T["Tools"]
+    T1["Utility<br/>clarify_intent<br/>get_current_time<br/>generate_google_maps_route"]
+    T2["Search<br/>search_sushi_restaurants<br/>search_parking_garages"]
+    T3["Details<br/>get_sushi_restaurant_details<br/>get_parking_garage_details"]
+  end
+
+  J["JSON Datasets<br/>Sushi + Parking"]
+  K["Observability<br/>Agent Events + Trace IDs + Token/Cost"]
+
+  A --> B --> C
+  C <--> E
+  C --> D
+  C --> F --> G
+
+  G --> T1
+  G --> T2
+  G --> T3
+
+  T2 --> J
+  T3 --> J
+  T1 --> H
+  T2 --> H
+  T3 --> H
+  H --> C
+
+  A -.-> T1
+  C -.-> K
+  D -.-> K
+  G -.-> K
+  H -.-> K
+
+  classDef main fill:#eef4ff,stroke:#8fb3ff,color:#1f3b73,stroke-width:1.2px;
+  classDef tools fill:#f8fafc,stroke:#cbd5e1,color:#334155,stroke-width:1px;
+  classDef data fill:#f5f3ff,stroke:#c4b5fd,color:#6d28d9,stroke-width:1px;
+  classDef obs fill:#fff7ed,stroke:#fdba74,color:#c2410c,stroke-width:1px;
+
+  class A,B,C,D,E,F,G,H main;
+  class T1,T2,T3 tools;
+  class J data;
+  class K obs;
