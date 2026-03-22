@@ -101,7 +101,7 @@ docker compose up --build
 
 The API will be available at `http://localhost:8000` and the Chat UI at `http://localhost:3000`.
 
-## ⚙️ Configuration
+## Configuration
 
 All configuration is centralized in `app/config.py` and can be overridden via `.env` files. The system is designed to run with **minimal environment variables**—only the `OPENAI_API_KEY` is required in your `.env`.
 
@@ -114,13 +114,13 @@ All configuration is centralized in `app/config.py` and can be overridden via `.
 | `MAX_SESSIONS` | Max in-memory sessions (LRU). | `max_sessions` |
 | `RATE_LIMIT_CHAT` | Global chat rate limit. | `rate_limit_chat` |
 
-## 🛡️ Key Security & Observability
+## Key Security & Observability
 1. **PII Redaction**: User messages and high-precision coordinates are redacted or rounded in server logs.
 2. **Strict Validation**: Every tool response is validated against a Pydantic model before reaching the LLM, preventing data corruption.
 3. **Agentic Tracing**: Every request has a unique Trace ID, and significant events (LLM starts, tool calls, costs) are logged with performance metrics.
 4. **Symbolic Cost Tracking**: The system calculates and logs token costs for every turn (set at $1.00/1M tokens for monitoring).
 
-## 🛠️ Alternative Startup (Non-Docker)
+## Alternative Startup (Non-Docker)
 
 If you don't have Docker installed, you can run the components manually:
 
