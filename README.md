@@ -93,13 +93,15 @@ flowchart LR
 
 ## Installation & Setup
 
-The easiest way to run the chatbot is using Docker:
+The easiest way to run the chatbot is using Docker (be sure, that you have inserted the GPT API key to the .env file before starting docker, if not, run the command one more time after inserting it):
 
 ```bash
 docker compose up --build
 ```
 
-The API will be available at `http://localhost:8000` and the Chat UI at `http://localhost:3000`.
+The Chat UI will be available at `http://localhost:8000`.
+
+For the proper work agree to use the device geolocation in browser, otherwise the default value will be selected. 
 
 ## Configuration
 
